@@ -1,0 +1,84 @@
+{
+  "analyses": [
+    {
+      "id": "analysis_001",
+      "tradeId": "trade_001",
+      "whaleId": "whale_001",
+      "timestamp": 1705689600000,
+      "recommendation": "BUY",
+      "confidence": 0.82,
+      "reasoning": "Whale with 72% win rate accumulating YES positions. Pattern matches historical bullish setup. Market sentiment positive.",
+      "context": {
+        "marketSentiment": "BULLISH",
+        "recentNews": [
+          "Positive regulatory developments",
+          "Increased market participation"
+        ],
+        "historicalPattern": "Bullish Accumulation (75% success rate)",
+        "whaleHistory": "Whale_001: 72% win rate, 12 successful trades",
+        "riskFactors": [
+          "Event uncertainty",
+          "Market volatility"
+        ]
+      },
+      "outcome": {
+        "actualOutcome": "CORRECT",
+        "pnl": 2500,
+        "timestamp": 1705776000000,
+        "feedback": "Analysis was accurate, whale prediction correct"
+      }
+    },
+    {
+      "id": "analysis_002",
+      "tradeId": "trade_002",
+      "whaleId": "whale_002",
+      "timestamp": 1705689605000,
+      "recommendation": "SELL",
+      "confidence": 0.71,
+      "reasoning": "Distribution pattern detected before event. Whale taking profits. Market sentiment mixed.",
+      "context": {
+        "marketSentiment": "NEUTRAL",
+        "recentNews": [
+          "Mixed market signals",
+          "Profit-taking activity"
+        ],
+        "historicalPattern": "Distribution Before Event (68% success rate)",
+        "whaleHistory": "Whale_002: 68% win rate, profit-taking behavior",
+        "riskFactors": [
+          "Potential reversal",
+          "Low liquidity"
+        ]
+      }
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec_001",
+      "analysisId": "analysis_001",
+      "type": "POSITION",
+      "title": "Follow Whale Accumulation",
+      "description": "Consider accumulating YES positions alongside whale_001",
+      "actionItems": [
+        "Monitor whale_001 position size",
+        "Set entry at current price levels",
+        "Plan exit at 20% profit target"
+      ],
+      "priority": "HIGH",
+      "confidence": 0.82
+    },
+    {
+      "id": "rec_002",
+      "analysisId": "analysis_002",
+      "type": "RISK",
+      "title": "Reduce Exposure Before Event",
+      "description": "Whale distribution suggests profit-taking ahead of event",
+      "actionItems": [
+        "Reduce YES position by 30%",
+        "Set stop-loss at entry price",
+        "Monitor event developments"
+      ],
+      "priority": "MEDIUM",
+      "confidence": 0.71
+    }
+  ]
+}

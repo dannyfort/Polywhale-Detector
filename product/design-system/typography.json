@@ -1,0 +1,32 @@
+{
+  "heading": {
+    "family": "Inter",
+    "weights": ["600", "700"],
+    "sizes": {
+      "h1": "32px",
+      "h2": "24px",
+      "h3": "20px",
+      "h4": "16px"
+    },
+    "lineHeight": "1.2"
+  },
+  "body": {
+    "family": "Inter",
+    "weights": ["400", "500"],
+    "sizes": {
+      "lg": "16px",
+      "base": "14px",
+      "sm": "12px"
+    },
+    "lineHeight": "1.5"
+  },
+  "mono": {
+    "family": "IBM Plex Mono",
+    "weights": ["400", "500"],
+    "sizes": {
+      "base": "13px",
+      "sm": "11px"
+    },
+    "lineHeight": "1.4"
+  }
+}

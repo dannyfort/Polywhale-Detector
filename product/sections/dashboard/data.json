@@ -1,0 +1,122 @@
+{
+  "recentTrades": [
+    {
+      "id": "trade_001",
+      "whaleId": "whale_001",
+      "amount": 25000,
+      "side": "BUY",
+      "outcome": "YES",
+      "timestamp": 1705689600000,
+      "confidence": 0.82
+    },
+    {
+      "id": "trade_002",
+      "whaleId": "whale_002",
+      "amount": 15000,
+      "side": "SELL",
+      "outcome": "YES",
+      "timestamp": 1705689605000,
+      "confidence": 0.71
+    },
+    {
+      "id": "trade_003",
+      "whaleId": "whale_001",
+      "amount": 18000,
+      "side": "BUY",
+      "outcome": "NO",
+      "timestamp": 1705689610000,
+      "confidence": 0.65
+    }
+  ],
+  "activeAlerts": [
+    {
+      "id": "alert_001",
+      "type": "WHALE_DETECTED",
+      "severity": "HIGH",
+      "title": "Large Whale Trade Detected",
+      "message": "Whale_001 placed $25,000 BUY order on YES outcome",
+      "timestamp": 1705689600000,
+      "read": false
+    },
+    {
+      "id": "alert_002",
+      "type": "PATTERN_MATCH",
+      "severity": "MEDIUM",
+      "title": "Bullish Accumulation Pattern",
+      "message": "Pattern matches historical bullish setup with 75% success rate",
+      "timestamp": 1705689605000,
+      "read": false
+    },
+    {
+      "id": "alert_003",
+      "type": "UNUSUAL_ACTIVITY",
+      "severity": "MEDIUM",
+      "title": "Unusual Market Activity",
+      "message": "Volume spike detected: 2x normal trading volume",
+      "timestamp": 1705689610000,
+      "read": true
+    }
+  ],
+  "topWhales": [
+    {
+      "id": "whale_001",
+      "name": "Whale Alpha",
+      "volume": 250000,
+      "winRate": 0.72,
+      "tradeCount": 12,
+      "riskScore": 0.65,
+      "lastSeen": 1705689600000
+    },
+    {
+      "id": "whale_002",
+      "name": "Whale Beta",
+      "volume": 180000,
+      "winRate": 0.68,
+      "tradeCount": 8,
+      "riskScore": 0.58,
+      "lastSeen": 1705689605000
+    },
+    {
+      "id": "whale_003",
+      "name": "Whale Gamma",
+      "volume": 145000,
+      "winRate": 0.64,
+      "tradeCount": 6,
+      "riskScore": 0.72,
+      "lastSeen": 1705689500000
+    }
+  ],
+  "activePatterns": [
+    {
+      "id": "pattern_001",
+      "name": "Bullish Accumulation",
+      "type": "ACCUMULATION",
+      "frequency": 12,
+      "successRate": 0.75,
+      "confidence": 0.82
+    },
+    {
+      "id": "pattern_002",
+      "name": "Distribution Before Event",
+      "type": "TIMING",
+      "frequency": 8,
+      "successRate": 0.68,
+      "confidence": 0.76
+    },
+    {
+      "id": "pattern_003",
+      "name": "Volume Spike",
+      "type": "VOLUME",
+      "frequency": 15,
+      "successRate": 0.62,
+      "confidence": 0.71
+    }
+  ],
+  "metrics": {
+    "totalWhalesTracked": 47,
+    "alertsToday": 23,
+    "patternsActive": 8,
+    "recommendationAccuracy": 0.68,
+    "systemUptime": 0.995
+  }
+}

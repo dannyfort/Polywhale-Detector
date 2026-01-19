@@ -1,0 +1,86 @@
+{
+  "patterns": [
+    {
+      "id": "pattern_001",
+      "name": "Bullish Accumulation",
+      "type": "ACCUMULATION",
+      "frequency": 12,
+      "successRate": 0.75,
+      "lastOccurrence": 1705689600000,
+      "characteristics": [
+        {
+          "key": "volume_increase",
+          "value": 1.5,
+          "weight": 0.8
+        },
+        {
+          "key": "price_stability",
+          "value": 0.05,
+          "weight": 0.6
+        },
+        {
+          "key": "time_window",
+          "value": 3600000,
+          "weight": 0.7
+        }
+      ],
+      "confidence": 0.82
+    },
+    {
+      "id": "pattern_002",
+      "name": "Distribution Before Event",
+      "type": "TIMING",
+      "frequency": 8,
+      "successRate": 0.68,
+      "lastOccurrence": 1705689605000,
+      "characteristics": [
+        {
+          "key": "event_proximity",
+          "value": 3600000,
+          "weight": 0.9
+        },
+        {
+          "key": "volume_spike",
+          "value": 2.0,
+          "weight": 0.8
+        }
+      ],
+      "confidence": 0.76
+    }
+  ],
+  "matches": [
+    {
+      "id": "match_001",
+      "patternId": "pattern_001",
+      "tradeId": "trade_001",
+      "timestamp": 1705689600000,
+      "similarity": 0.88,
+      "confidence": 0.82,
+      "predictedOutcome": "BULLISH"
+    },
+    {
+      "id": "match_002",
+      "patternId": "pattern_002",
+      "tradeId": "trade_002",
+      "timestamp": 1705689605000,
+      "similarity": 0.79,
+      "confidence": 0.71,
+      "predictedOutcome": "BEARISH"
+    }
+  ],
+  "insights": [
+    {
+      "id": "insight_001",
+      "patternId": "pattern_001",
+      "type": "EFFECTIVENESS",
+      "title": "Bullish Accumulation Success",
+      "description": "Pattern shows 75% success rate with increasing confidence",
+      "metrics": {
+        "successRate": 0.75,
+        "frequency": 12,
+        "avgConfidence": 0.82
+      },
+      "timestamp": 1705689600000
+    }
+  ]
+}

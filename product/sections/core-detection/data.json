@@ -1,0 +1,79 @@
+{
+  "trades": [
+    {
+      "id": "trade_001",
+      "eventId": "event_123",
+      "timestamp": 1705689600000,
+      "amount": 25000,
+      "side": "BUY",
+      "price": 0.65,
+      "outcome": "YES",
+      "trader": "whale_001",
+      "isWhale": true
+    },
+    {
+      "id": "trade_002",
+      "eventId": "event_123",
+      "timestamp": 1705689605000,
+      "amount": 15000,
+      "side": "SELL",
+      "price": 0.68,
+      "outcome": "YES",
+      "trader": "whale_002",
+      "isWhale": true
+    },
+    {
+      "id": "trade_003",
+      "eventId": "event_124",
+      "timestamp": 1705689610000,
+      "amount": 5000,
+      "side": "BUY",
+      "price": 0.45,
+      "outcome": "NO",
+      "trader": "retail_001",
+      "isWhale": false
+    }
+  ],
+  "whales": [
+    {
+      "id": "whale_001",
+      "totalVolume": 250000,
+      "tradeCount": 12,
+      "averageSize": 20833,
+      "winRate": 0.72,
+      "lastSeen": 1705689600000,
+      "patterns": ["bullish_accumulation", "event_timing"],
+      "riskScore": 0.65
+    },
+    {
+      "id": "whale_002",
+      "totalVolume": 180000,
+      "tradeCount": 8,
+      "averageSize": 22500,
+      "winRate": 0.68,
+      "lastSeen": 1705689605000,
+      "patterns": ["distribution", "profit_taking"],
+      "riskScore": 0.58
+    }
+  ],
+  "alerts": [
+    {
+      "id": "alert_001",
+      "whaleId": "whale_001",
+      "tradeId": "trade_001",
+      "type": "LARGE_TRADE",
+      "severity": "HIGH",
+      "timestamp": 1705689600000,
+      "message": "Whale detected: $25,000 BUY order on YES outcome"
+    },
+    {
+      "id": "alert_002",
+      "whaleId": "whale_002",
+      "tradeId": "trade_002",
+      "type": "PATTERN_MATCH",
+      "severity": "MEDIUM",
+      "timestamp": 1705689605000,
+      "message": "Distribution pattern detected: $15,000 SELL order"
+    }
+  ]
+}

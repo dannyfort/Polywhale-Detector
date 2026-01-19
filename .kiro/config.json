@@ -1,0 +1,48 @@
+{
+  "projectName": "Polywhale Detector",
+  "description": "Advanced whale trading pattern detector for Polymarket with Acontext learning",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "id": "core-detection",
+      "name": "Core Detection Engine",
+      "description": "Real-time whale identification and monitoring",
+      "status": "planning"
+    },
+    {
+      "id": "pattern-analysis",
+      "name": "Pattern Analysis",
+      "description": "Machine learning-based pattern recognition",
+      "status": "planning"
+    },
+    {
+      "id": "ai-analysis",
+      "name": "AI Analysis & Recommendations",
+      "description": "LLM-powered analysis with web search integration",
+      "status": "planning"
+    },
+    {
+      "id": "dashboard",
+      "name": "User Dashboard",
+      "description": "Real-time monitoring interface",
+      "status": "planning"
+    }
+  ],
+  "technologies": {
+    "frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "backend": ["Next.js API Routes", "Supabase", "PostgreSQL"],
+    "integrations": ["Polymarket API", "Acontext", "OpenAI/Anthropic", "Brave Search"],
+    "deployment": ["Vercel", "Docker"]
+  },
+  "environment": {
+    "required": [
+      "NEXT_PUBLIC_POLYMARKET_API_URL",
+      "NEXT_PUBLIC_SUPABASE_URL",
+      "NEXT_PUBLIC_SUPABASE_ANON_KEY",
+      "SUPABASE_SERVICE_ROLE_KEY",
+      "ACONTEXT_API_KEY",
+      "OPENAI_API_KEY",
+      "BRAVE_SEARCH_API_KEY"
+    ]
+  }
+}

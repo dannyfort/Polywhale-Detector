@@ -1,0 +1,37 @@
+{
+  "primary": {
+    "name": "Emerald",
+    "tailwind": "emerald",
+    "usage": "Primary actions, whale detection highlights"
+  },
+  "secondary": {
+    "name": "Amber",
+    "tailwind": "amber",
+    "usage": "Alerts, warnings, unusual activity"
+  },
+  "neutral": {
+    "name": "Stone",
+    "tailwind": "stone",
+    "usage": "Backgrounds, text, borders"
+  },
+  "accent": {
+    "name": "Rose",
+    "tailwind": "rose",
+    "usage": "Negative indicators, sell signals"
+  },
+  "success": {
+    "name": "Green",
+    "tailwind": "green",
+    "usage": "Positive outcomes, buy signals"
+  },
+  "warning": {
+    "name": "Orange",
+    "tailwind": "orange",
+    "usage": "Caution, moderate risk"
+  },
+  "error": {
+    "name": "Red",
+    "tailwind": "red",
+    "usage": "Errors, critical alerts"
+  }
+}
